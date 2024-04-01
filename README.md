@@ -1,6 +1,8 @@
 # Card-hover-Animation
 
 Root directory: new-branch
+
+
 This project showcases a simple yet visually appealing card hover animation created using HTML and CSS. When the user hovers over the card, it smoothly transitions to reveal additional content, providing a delightful user experience.
 
 Features
