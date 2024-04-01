@@ -1,0 +1,76 @@
+.circle{
+    background-color: rgb(11, 2, 38);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.container .card{
+    background-color: rgba(255,255,255,0.1);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    padding:20px 25px 20px 25px;
+    position: absolute;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.2); 
+    backface-visibility: hidden;
+
+}
+.container{
+    height: 150px;
+    width: 250px;
+    position: relative;
+    z-index: 100;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.container .back{
+    border: 1px solid rgba(255,255,255,0.2); 
+    background-color: rgba(255,255,255,0.1);
+    padding:20px 25px 20px 25px;
+    border-radius: 25px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
+.logo{
+    width: 45px;
+    
+}
+
+.imp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container .card .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.container .card .main .type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.back .strip{
+    display: flex;
+    flex-direction: row;
+    margin-top: 55px;
+    align-items: center;
+}
